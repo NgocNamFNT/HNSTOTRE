@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>HNCOMPUTER</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css" >
+    <style>
+        html, body{
+            margin: 0px;
+        }
+        .div1{
+            background-color: aqua;
+        }
+        .text1:hover{
+            color: green;
+        }
+        .text1:active{
+            color: gray;
+        }
+        li:first-child{
+            color: red;
+        }
+        li:last-child{
+            color: blueviolet;
+        }
+        .div2{
+            width: 100%;
+            height: 200px;
+            background-color: blueviolet;
+        }
+        .div2::before{
+            content: "";
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+        }
+        .text2::selection{
+            background-color: red;
+        }
+        .title1{
+            /* position: relative; */
+        }
+        .box1{
+            width: 100%;
+            height: 100px;
+            background-color: red;
+            position: relative;
+        }
+        .box2{
+            width: 50px;
+            height: 50px;
+            background-color:green;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .header{
+            background-color: brown;
+            width: 100%;
+            height: 100px;
+            position: fixed;
+            top: 0;
+        }
+        ul{
+            height: 2000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+
+    </div>
+    <div class="div1">
+        <h1 class="text1">HNCOMPUTER</h1>
+        <ul>
+            <li>May tinh dell</li>
+            <li>May tinh hp</li>
+            <li>May tinh lenovo</li>
+        </ul>
+    </div>
+    <div class="div2">
+        <!-- <h1 class="title1">Cac loi hay say ra tren may tinh</h1> -->
+        <p class="text2">Sua chua may tinh dell</p>
+
+    </div>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+
+</html>
